@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "ContosoDashboard-SSD",
+    "description": "Employee Performance Analytics Dashboard with Spec-Driven Development",
+    "language": "csharp",
+    "framework": "aspnetcore",
+    "frameworkVersion": "8.0"
+  },
+  "ai": {
+    "provider": "copilot",
+    "model": "gpt-4",
+    "endpoint": "github-copilot"
+  },
+  "scripting": {
+    "shell": "powershell",
+    "version": "5.1+"
+  },
+  "specFiles": {
+    "constitution": "SPEC_KIT_CONSTITUTION.md",
+    "specification": "SPEC_KIT_SPECIFICATION.md",
+    "implementationPlan": "SPEC_KIT_IMPLEMENTATION_PLAN.md",
+    "tasks": "SPEC_KIT_TASKS.md"
+  },
+  "vcs": {
+    "type": "git",
+    "mainBranch": "main"
+  },
+  "integrations": {
+    "github": {
+      "enabled": true,
+      "copilot": true
+    },
+    "visualStudioCode": {
+      "enabled": true,
+      "extensions": [
+        "github.copilot",
+        "github.copilot-chat"
+      ]
+    }
+  },
+  "features": {
+    "specDrivenDevelopment": true,
+    "aiAssistedCodeGeneration": true,
+    "continuousIntegration": true,
+    "automatedTesting": true
+  },
+  "buildSettings": {
+    "buildCommand": "dotnet build",
+    "testCommand": "dotnet test",
+    "packageCommand": "dotnet pack"
+  },
+  "deploymentSettings": {
+    "targetEnvironment": "azure",
+    "containerized": false
+  },
+  "createdAt": "2026-01-28T16:00:00Z",
+  "specKitVersion": "1.0",
+  "status": "initialized"
+}
